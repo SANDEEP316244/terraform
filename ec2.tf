@@ -36,9 +36,3 @@ resource "aws_security_group" "test-poc" {
     Environment = "nonProd"
     appgroup = "DevOps"
   }
-
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> af58f48 (update)
