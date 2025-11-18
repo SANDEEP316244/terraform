@@ -11,8 +11,8 @@ resource "aws_instance" "nonprod-devops-poc-ec2" {
     appgroup = "DevOps"
   }
 }
-resource "aws_security_group" "test-poc" {
-  name   = "test-poc"
+resource "aws_security_group" "allow_all" {
+  name   = "allow-all"
 
   egress {
     from_port        = 0 # from port 0 to to port 0 means all ports
@@ -36,3 +36,4 @@ resource "aws_security_group" "test-poc" {
     Environment = "nonProd"
     appgroup = "DevOps"
   }
+}
