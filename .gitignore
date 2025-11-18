@@ -1,0 +1,23 @@
+# Terraform-generated directories and files
+.terraform/
+*.tfstate
+*.tfstate.*.backup
+.terraform.lock.hcl # Generally recommended to commit this, but can be ignored in specific cases
+.terraformrc
+terraform.rc
+
+# Sensitive files
+*.tfvars
+*.tfvars.json
+
+# Crash log files
+crash.log
+
+# Terraform plan files (if not intended for version control)
+*.tfplan
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
