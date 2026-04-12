@@ -1,4 +1,5 @@
 resource "aws_instance" "ec2" {
+    count = length(var.instance)
     ami = var.ami_id
     instance_type = var.instance
     vpc_security_group_ids = [aws_security_group.allow.id]
