@@ -1,8 +1,8 @@
 resource "aws_instance" "ec2" {
     ami = "ami-0220d79f3f480ecf5"
     instance_type = "t3a.micro"
-    vpc_security_group_ids = [aws_security_group.sec-grp-test.id]
-    tags  {
+    vpc_security_group_ids = [aws_security_group.allow_all.id]
+    tags =  {
         Name = "test-DevOps-ec2"
         Application = "DevOps"
         appgroup = "DevOps"
